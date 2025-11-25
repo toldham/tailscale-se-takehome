@@ -1,1 +1,2 @@
-# tailscale-se-takehome
+# Tailscale Solutions Engineer Takehome Assignment
+The goal of this project is to deploy a [subnet router](https://tailscale.com/kb/1019/subnets) and a device with [Tailscale SSH](https://tailscale.com/kb/1193/tailscale-ssh) using infrastructure-as-code, connect them to an existing tailnet, and then test the connection from a device in a different network on the same tailnet.
