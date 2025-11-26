@@ -55,3 +55,8 @@ variable "vm_image" {
 variable "vm_architecture" {
     type = string
 }
+
+variable "vm_tailscale_api_auth" {
+    type = string
+    sensitive = true
+}
