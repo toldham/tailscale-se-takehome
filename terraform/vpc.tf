@@ -15,3 +15,17 @@ resource "google_compute_network" "custom-vpc-network" {
   auto_create_subnetworks = false
   mtu                     = 1460
 }
+
+resource "google_compute_firewall" "custom-vpc-network-firewall" {
+  name    = "allow-ssh"
+  project = var.project_id
+  network = google_compute_network.custom-vpc-network.name
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+
+}
