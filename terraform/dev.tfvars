@@ -24,8 +24,8 @@ vm_name = "tailscale-subnet-router"
 
 vm_machine_type = "n1-standard-1"
 
-vm_hostname = "tailscale-subnet-router"
+vm_hostname = "tailscale.subnet-router"
 
-vm_image = "centos-stream/centos-9"
+vm_image = "centos-stream-9-v20251111"
 
 vm_architecture = "X86_64"
