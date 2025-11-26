@@ -16,6 +16,10 @@ variable "env" {
     type = string
 }
 
+variable "zone" {
+    type = string
+}
+
 #### VPC Network ####
 
 variable "vpc_name" {
@@ -27,5 +31,27 @@ variable "vpc_subnet_name" {
 }
 
 variable "vpc_subnet_range" {
+    type = string
+}
+
+#### Compute VM ####
+
+variable "vm_name" {
+    type = string
+}
+
+variable "vm_machine_type" {
+    type = string
+}
+
+variable "vm_hostname" {
+    type = string
+}
+
+variable "vm_image" {
+    type = string
+}
+
+variable "vm_architecture" {
     type = string
 }
