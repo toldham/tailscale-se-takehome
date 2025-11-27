@@ -22,9 +22,13 @@ vpc_subnet_range = "10.2.0.0/16"
 
 vm_name = "tailscale-subnet-router"
 
+vm_name_ssh = "tailscale-ssh"
+
 vm_machine_type = "n1-standard-1"
 
 vm_hostname = "tailscale-subnet-router.tailscale-vpc"
+
+vm_hostname_ssh = "tailscale-ssh.tailscale-vpc"
 
 vm_image = "centos-stream-9-v20251111"
 
